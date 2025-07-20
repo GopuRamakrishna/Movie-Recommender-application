@@ -4,6 +4,9 @@ import pickle
 import gdown
 import requests
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 st.set_page_config(page_title="Movie Recommender", layout="centered")
 
@@ -38,7 +41,7 @@ def fetch_poster(movie_id):
     url = f"https://api.themoviedb.org/3/movie/{movie_id}?language=en-US"
     headers = {
         "accept": "application/json",
-        "Authorization": f"Bearer {st.secrets.tmdb.api_token}"
+        "Authorization": f"Bearer {os.getenv('TMDB_API_TOKEN')}"
     }
     response = requests.get(url, headers=headers)
     if response.status_code == 200:

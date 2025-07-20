@@ -3,3 +3,4 @@ pandas
 pickle5
 gdown
 requests
+python-dotenv

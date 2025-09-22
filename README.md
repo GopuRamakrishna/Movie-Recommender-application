@@ -15,7 +15,7 @@ This system is designed to help users discover new movies aligned with their int
   - Cast & crew
   - Keywords/tags
 - **API Integration:** Retrieves movie posters and images from **TMDB API**, displaying them dynamically in the app.  
-- **Recommendation Logic:** Returns the **top N most similar movies** for a given input movie.  
+- **Recommendation Logic:** Returns the **top 5 most similar movies** for a given input movie.  
 - **Deployment:** Can be integrated with a simple web interface or Streamlit app for interactive recommendations.  
 
 ---
@@ -34,21 +34,5 @@ This system is designed to help users discover new movies aligned with their int
 - **Python**  
 - **Pandas, NumPy** (data processing)  
 - **Scikit-learn** (TF-IDF vectorization, similarity calculations)  
-- **TMDB API** (movie metadata & poster images)  
-- **Optional:** Streamlit / Flask for web deployment  
-
----
-
-## Potential Improvements 🚀
-
-- Convert to **Hybrid Recommender** by adding Collaborative Filtering using user ratings.  
-- Incorporate **Neural Embeddings** (e.g., Word2Vec / BERT) for plot and keywords for better semantic understanding.  
-- Add **personalization features** like watch history or user profiles.  
-- Deploy as **full web application with search and filtering** options.  
-
----
-
-## Resume-Friendly Summary
-
-> **Movie Recommender System** — Developed a **content-based movie recommendation engine** using the TMDB dataset, integrating API calls to fetch real-time movie posters. Suggested top N similar movies based on genres, keywords, cast, and overview, providing a visually engaging recommendation experience.  
+- **TMDB API** (movie metadata & poster images)   
 

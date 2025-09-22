@@ -33,6 +33,6 @@ This system is designed to help users discover new movies aligned with their int
 
 - **Python**  
 - **Pandas, NumPy** (data processing)  
-- **Scikit-learn** (TF-IDF vectorization, similarity calculations)  
+- **Scikit-learn** (similarity calculations)  
 - **TMDB API** (movie metadata & poster images)   
 
